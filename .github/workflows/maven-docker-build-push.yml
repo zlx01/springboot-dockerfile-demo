@@ -39,5 +39,6 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: .
+        file: ./simple/Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/springboot-demo:latest
