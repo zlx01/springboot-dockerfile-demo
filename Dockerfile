@@ -10,6 +10,6 @@ COPY --from=builder ./target/springboot-demo-0.0.1-SNAPSHOT.jar /usr/app/hello.j
 
 WORKDIR /usr/app
 
-EXPOSE 8080
-
 ENTRYPOINT ["java", "-jar", "hello.jar"]
+
+EXPOSE 8080
